@@ -1,0 +1,19 @@
+'use strict';
+
+function hybrid_operation_to_uneven(collection) {
+  var arr=[];
+  for(var k=0;k<collection.length;k++){
+   if(collection[k]%2!=0){
+     arr.push(collection[k]);
+   }
+  }
+  var j=0;
+  for(var i=0;i<arr.length;i++){
+    arr[i]=arr[i]*3+2;
+  }
+  return arr;
+  //在这里写入代码
+}
+
+module.exports = hybrid_operation_to_uneven;
+

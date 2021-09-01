@@ -1,0 +1,14 @@
+'use strict';
+
+function find_last_even(collection) {
+  var index=0;
+  for (var i = 0; i< collection.length; i++) {
+    if (collection[i]%2==0) {
+      index=i;
+     // 不加break就是查询该元素在集合中最后出现的下标位置
+    }
+  }
+  return collection[index];//在这里写入代码//在这里写入代码
+}
+
+module.exports = find_last_even;
